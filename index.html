@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Predictor v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Account Creation / Sign In Page -->
+    <div id="account-page">
+        <h1>Aviator Predictor v1.0</h1>
+        <h2>Welcome to the world of Wealth (sponsored and created by Andziso's projects)</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="create-account">Create Account</button>
+        <button id="sign-in">Sign In</button>
+        <p id="account-error-msg" class="error-msg"></p>
+    </div>
+
+    <!-- Activation Page -->
+    <div id="activation-page" style="display: none;">
+        <h1>Aviator Predictor v1.0</h1>
+        <h2>Enter Activation Code</h2>
+        <input type="text" id="activation-code" placeholder="Enter Code">
+        <button id="submit-code">Submit</button>
+        <p id="error-msg" class="error-msg"></p>
+    </div>
+
+    <!-- Prediction Page (Initially Hidden) -->
+    <div id="prediction-page" style="display: none;">
+        <h1>Aviator Predictor v1.0</h1>
+        <h2>🎉</h2> <!-- Emoji or Icon instead of an image -->
+        
+        <!-- Spinner for loading animation -->
+        <div id="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Prediction Result (Initially Hidden) -->
+        <h2 id="prediction-result" style="display: none;">0.00x</h2>
+
+        <button id="get-prediction">Get Prediction!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
